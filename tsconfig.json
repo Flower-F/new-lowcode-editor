@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ES2017",
+    "resolveJsonModule": true,
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "paths": {
+      "@lc/shared": [
+        "./packages/shared/src/index"
+      ]
+    }
+  },
+  "include": [
+    "apps/**/src/**/*",
+    "packages/**/src/**/*"
+  ]
+}

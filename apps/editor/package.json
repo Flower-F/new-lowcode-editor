@@ -1,0 +1,15 @@
+{
+  "name": "@lc/editor",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .ts,.vue --fix"
+  },
+  "dependencies": {
+    "@lc/shared": "workspace:^0.0.0",
+    "vue": "^3.2.25"
+  }
+}
