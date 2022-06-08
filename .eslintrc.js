@@ -12,9 +12,9 @@ const options = defineConfig({
     'plugin:@typescript-eslint/recommended'
   ],
   parserOptions: {
-    'ecmaVersion': 'latest',
-    'parser': '@typescript-eslint/parser',
-    'sourceType': 'module'
+    ecmaVersion: 'latest',
+    parser: '@typescript-eslint/parser',
+    sourceType: 'module'
   },
   plugins: [
     'vue',

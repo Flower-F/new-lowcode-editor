@@ -11,7 +11,8 @@
     }
   },
   "scripts": {
-    "build": "unbuild"
+    "build": "unbuild",
+    "lint": "eslint src --ext .ts,.vue --fix"
   },
   "keywords": [],
   "author": "",

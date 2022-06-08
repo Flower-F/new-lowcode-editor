@@ -7,6 +7,9 @@
     "baseUrl": ".",
     "jsx": "preserve",
     "paths": {
+      "@/*": [
+        "./src/*"
+      ],
       "@lc/shared": [
         "./packages/shared/src/index"
       ]
