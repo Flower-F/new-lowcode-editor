@@ -12,6 +12,8 @@
   },
   "scripts": {
     "build": "unbuild",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
     "lint": "eslint src --ext .ts,.vue --fix"
   },
   "keywords": [],
