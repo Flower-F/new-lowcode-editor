@@ -1,0 +1,20 @@
+.editor-layout {
+  display: flex;
+  height: 100%;
+
+  &-left {
+    width: 180px;
+
+    // background-color: #333;
+  }
+
+  &-right {
+    width: 220px;
+
+    // background-color: #333;
+  }
+
+  &-content {
+    flex: 1;
+  }
+}

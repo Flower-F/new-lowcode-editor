@@ -1,15 +1,18 @@
 {
   "name": "@lc/editor",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "lint": "eslint src --ext .ts,.vue --fix"
+    "eslint": "eslint src --ext .ts,.vue --fix",
+    "stylelint": "stylelint --fix src/**/**/*.{css,scss}",
+    "lint": "pnpm eslint && pnpm stylelint"
   },
+  "license": "MIT",
   "dependencies": {
-    "@lc/shared": "workspace:^0.0.0",
-    "vue": "^3.2.25"
+    "@lc/shared": "workspace:^0.0.1",
+    "vue-router": "^4.0.15"
   }
 }

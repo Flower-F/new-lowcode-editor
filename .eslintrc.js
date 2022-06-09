@@ -39,6 +39,24 @@ const options = defineConfig({
     ],
     '@typescript-eslint/no-var-requires': [
       'off'
+    ],
+    'vue/multi-word-component-names': [
+      'off'
+    ],
+    'vue/no-setup-props-destructure': [
+      'off'
+    ],
+    'vue/no-multiple-template-root': [
+      'off'
+    ],
+    '@typescript-eslint/no-explicit-any': [
+      'off'
+    ],
+    'comma-dangle': [
+      'off'
+    ],
+    '@typescript-eslint/ban-ts-comment': [
+      'off'
     ]
   },
   overrides: [
