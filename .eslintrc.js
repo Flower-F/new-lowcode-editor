@@ -21,7 +21,7 @@ const options = defineConfig({
     '@typescript-eslint'
   ],
   rules: {
-    indent: [
+    'indent': [
       'error',
       2
     ],
@@ -29,11 +29,11 @@ const options = defineConfig({
       'error',
       'unix'
     ],
-    quotes: [
+    'quotes': [
       'error',
       'single'
     ],
-    semi: [
+    'semi': [
       'error',
       'always'
     ],
@@ -53,7 +53,7 @@ const options = defineConfig({
       'off'
     ],
     'comma-dangle': [
-      'off'
+      'error'
     ],
     '@typescript-eslint/ban-ts-comment': [
       'off'

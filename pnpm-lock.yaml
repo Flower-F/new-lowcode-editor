@@ -18,6 +18,7 @@ importers:
       typescript: ^4.7.3
       unbuild: ^0.7.4
       vite: ^2.9.10
+      vite-plugin-mocker: ^1.0.11
       vite-plugin-pages: ^0.23.0
       vite-tsconfig-paths: ^3.5.0
       vitest: ^0.14.1
@@ -40,6 +41,7 @@ importers:
       typescript: registry.npmmirror.com/typescript/4.7.3
       unbuild: registry.npmmirror.com/unbuild/0.7.4
       vite: registry.npmmirror.com/vite/2.9.10_sass@1.52.3
+      vite-plugin-mocker: registry.npmmirror.com/vite-plugin-mocker/1.0.11_sass@1.52.3
       vite-plugin-pages: registry.npmmirror.com/vite-plugin-pages/0.23.0_vite@2.9.10
       vite-tsconfig-paths: registry.npmmirror.com/vite-tsconfig-paths/3.5.0_vite@2.9.10
       vitest: registry.npmmirror.com/vitest/0.14.1_sass@1.52.3
@@ -4380,6 +4382,19 @@ packages:
     dependencies:
       spdx-correct: registry.npmmirror.com/spdx-correct/3.1.1
       spdx-expression-parse: registry.npmmirror.com/spdx-expression-parse/3.0.1
+    dev: true
+
+  registry.npmmirror.com/vite-plugin-mocker/1.0.11_sass@1.52.3:
+    resolution: {integrity: sha512-66GAEYLKDfTTDQyU2Dm4vKZPVKprXJDwOm/CLM9jv19PEJ6LLnVg/idFSCoHUoONDwbVYcHQiQ39QpyiSArzeA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite-plugin-mocker/-/vite-plugin-mocker-1.0.11.tgz}
+    id: registry.npmmirror.com/vite-plugin-mocker/1.0.11
+    name: vite-plugin-mocker
+    version: 1.0.11
+    dependencies:
+      vite: registry.npmmirror.com/vite/2.9.10_sass@1.52.3
+    transitivePeerDependencies:
+      - less
+      - sass
+      - stylus
     dev: true
 
   registry.npmmirror.com/vite-plugin-pages/0.23.0_vite@2.9.10:

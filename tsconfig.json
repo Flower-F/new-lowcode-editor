@@ -16,6 +16,7 @@
     }
   },
   "include": [
+    "./env.d.ts",
     "apps/**/src/**/*",
     "packages/**/src/**/*"
   ]

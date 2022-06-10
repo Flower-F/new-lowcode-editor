@@ -1,10 +1,16 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import Pages from 'vite-plugin-pages';
+import pages from 'vite-plugin-pages';
+import viteMocker from 'vite-plugin-mocker';
 
 export default defineConfig({
-  // TODO: paths 插件不生效
-  plugins: [vue(), Pages({
-    exclude: ['**/components/*']
-  })]
+  plugins: [
+    viteMocker({
+      delay: [0, 1000]
+    }),
+    vue(),
+    pages({
+      exclude: ['**/components/*']
+    })
+  ]
 });
