@@ -1,5 +1,5 @@
 {
-  "name": "@lc/editor",
+  "name": "editor",
   "private": true,
   "version": "0.0.1",
   "scripts": {
@@ -13,6 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "@lc/shared": "workspace:^0.0.1",
+    "pinia": "^2.0.14",
     "vue-router": "^4.0.15"
   }
 }

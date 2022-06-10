@@ -5,8 +5,5 @@ const { src } = defineProps<{
 </script>
 
 <template>
-  <img :src="src">
+  <img :src="src" class="lc-image">
 </template>
-
-<style lang="scss" scoped>
-</style>

@@ -1,11 +1,19 @@
 <script setup lang="ts">
-import './EditorLeft.scss';
 import MaterialBlock from '../MaterialBlock/MaterialBlock.vue';
-import { materialList } from '../../../../data';
-import { IMaterial } from '@lc/shared';
+import { getMaterialDefaultProps, materialList } from '@/data';
+import { IMaterial, PageElement } from '@lc/shared';
+import { useProjectStore } from '@/store';
+import './EditorLeft.scss';
+
+const projectStore = useProjectStore();
 
 const onClick = (e: Event, m: IMaterial) => {
   console.log('click', m);
+  const element = PageElement.create();
+  element.mId = m.id;
+  element.mVersion = m.version;
+  element.props = getMaterialDefaultProps(m);
+  projectStore.addElement(element);
 };
 </script>
 

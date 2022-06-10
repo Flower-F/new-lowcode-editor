@@ -2,5 +2,5 @@
 
 - Monorepo + Pnpm
 - Unbuild
-- Vue3
+- Vue3 + TypeScript + Pinia
 - Eslint + Stylelint + Editorconfig

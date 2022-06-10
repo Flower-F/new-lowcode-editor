@@ -4,20 +4,7 @@
     "target": "ES2017",
     "resolveJsonModule": true,
     "moduleResolution": "Node",
-    "baseUrl": ".",
-    "jsx": "preserve",
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "@lc/shared": [
-        "./packages/shared/src/index"
-      ]
-    }
-  },
-  "include": [
-    "./env.d.ts",
-    "apps/**/src/**/*",
-    "packages/**/src/**/*"
-  ]
+    "allowSyntheticDefaultImports": true,
+    "jsx": "preserve"
+  }
 }
