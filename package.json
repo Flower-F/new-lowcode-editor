@@ -5,6 +5,7 @@
     "@typescript-eslint/eslint-plugin": "^5.27.1",
     "@typescript-eslint/parser": "^5.27.1",
     "@vitejs/plugin-vue": "^2.3.3",
+    "@volar-plugins/prettyhtml": "^1.0.0",
     "eslint": "^8.17.0",
     "eslint-define-config": "^1.5.1",
     "eslint-plugin-vue": "^9.1.0",

@@ -14,12 +14,18 @@ const onClick = (e: Event, m: IMaterial) => {
   element.mVersion = m.version;
   element.props = getMaterialDefaultProps(m);
   projectStore.addElement(element);
+  projectStore.load(m);
 };
 </script>
 
 <template>
   <div class="editor-left">
-    <div v-for="item in materialList" :key="item.id" class="material" @click="onClick($event, item)">
+    <div
+      v-for="item in materialList"
+      :key="item.id"
+      class="material"
+      @click="onClick($event, item)"
+    >
       <MaterialBlock :title="item.title" />
     </div>
   </div>

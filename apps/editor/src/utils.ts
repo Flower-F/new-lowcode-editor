@@ -4,6 +4,19 @@ export function loadMaterials(materials: IMaterial[]) {
   return Promise.all(materials.map((material) => loadScript(material.source)));
 }
 
+async function delay(ms = 3000) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(ms);
+    }, ms);
+  });
+}
+
+export async function loadMaterial(material: IMaterial) {
+  await delay();
+  return loadScript(material.source);
+}
+
 export function loadScript(src: string) {
   return new Promise((resolve, reject) => {
     const scriptElement = document.createElement('script');

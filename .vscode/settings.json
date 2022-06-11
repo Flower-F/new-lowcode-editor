@@ -6,16 +6,23 @@
     "source.fixAll.stylelint": true
   },
   "prettier.enable": false,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
+  "eslint.alwaysShowStatus": true,
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
   "css.validate": false,
   "scss.validate": false,
   "stylelint.validate": [
     "css",
     "scss"
+  ],
+  "cSpell.words": [
+    "prettyhtml"
   ]
 }
