@@ -11,6 +11,3 @@ const { title } = defineProps<IMaterialBlock>();
 <template>
   <div class="material-block">{{ title }}</div>
 </template>
-
-<style lang="scss" scoped>
-</style>

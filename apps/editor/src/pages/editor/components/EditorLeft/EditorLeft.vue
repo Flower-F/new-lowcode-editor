@@ -24,6 +24,3 @@ const onClick = (e: Event, m: IMaterial) => {
     </div>
   </div>
 </template>
-
-<style lang="scss" scoped>
-</style>

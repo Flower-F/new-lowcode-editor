@@ -123,7 +123,7 @@ export class Page implements IPage {
   }
 
   public getElementById(id: string) {
-    return this.elements.find((e) => e.id === id);
+    return this._elements.find((e) => e.id === id);
   }
 
   public insertElement(index: number, element: PageElement) {

@@ -7,8 +7,11 @@ const p = Project.create();
 export const useProjectStore = defineStore('project', () => {
   const project = ref<IProject>(p.getJson());
   const currentPageIndex = ref(0);
-
   const currentPage = computed(() => project.value.pages[currentPageIndex.value]);
+
+  const currentElementIndex = ref(0);
+  const currentElement = computed(() => currentPageElements.value[currentElementIndex.value]);
+
   const currentPageElements = computed(() => project.value.pages[currentPageIndex.value].elements);
 
   const addElement = (e: PageElement) => {
@@ -16,10 +19,21 @@ export const useProjectStore = defineStore('project', () => {
     project.value = p.getJson();
   };
 
+  const changeElementProps = (props: Record<string, any>) => {
+    const element = p.getPageByIndex(currentPageIndex.value).getElementById(currentElement.value.id);
+    element.props = {
+      ...element.props,
+      ...props
+    };
+    project.value = p.getJson();
+  };
+
   return {
     project,
     currentPage,
     currentPageElements,
-    addElement
+    currentElement,
+    addElement,
+    changeElementProps
   };
 });
