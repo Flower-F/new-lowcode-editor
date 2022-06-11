@@ -4,7 +4,7 @@ export function loadMaterials(materials: IMaterial[]) {
   return Promise.all(materials.map((material) => loadScript(material.source)));
 }
 
-async function delay(ms = 3000) {
+async function delay(ms = 2000) {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(ms);

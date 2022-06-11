@@ -1,4 +1,19 @@
 .editor-content {
-  position: relative;
   height: 100%;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-bottom: 1px solid #eee;
+  }
+
+  &-page {
+    position: relative;
+    width: 375px;
+    height: 667px;
+    margin: 20px auto;
+    border: 1px solid #eee;
+  }
 }

@@ -71,6 +71,10 @@ export const useProjectStore = defineStore('project', () => {
 
   const isLoaded = (mId: number) => materials.value?.[mId];
 
+  const saveProject = () => {
+    localStorage.setItem('__project', JSON.stringify(p.getJson()));
+  };
+
   return {
     project,
     currentPage,
@@ -81,6 +85,7 @@ export const useProjectStore = defineStore('project', () => {
     changeElementStyle,
     setCurrentElement,
     load,
-    isLoaded
+    isLoaded,
+    saveProject
   };
 });

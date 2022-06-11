@@ -57,6 +57,10 @@ const options = defineConfig({
     ],
     '@typescript-eslint/ban-ts-comment': [
       'off'
+    ],
+    'object-curly-spacing': [
+      'error',
+      'always'
     ]
   },
   overrides: [
