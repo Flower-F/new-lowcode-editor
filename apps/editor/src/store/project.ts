@@ -10,11 +10,22 @@ export const useProjectStore = defineStore('project', () => {
   const currentPage = computed(() => project.value.pages[currentPageIndex.value]);
 
   const currentElementIndex = ref(0);
-  const currentElement = computed(() => currentPageElements.value[currentElementIndex.value]);
+  const currentElementId = ref();
+  const currentElement = computed(() => {
+    if (currentElementId.value) {
+      return p.getPageByIndex(currentPageIndex.value).getElementById(currentElementId.value);
+    }
+    return currentPageElements[currentElementIndex.value];
+  });
+
+  function setCurrentElement(id: string) {
+    currentElementId.value = id;
+  }
 
   const currentPageElements = computed(() => project.value.pages[currentPageIndex.value].elements);
 
   const addElement = (e: PageElement) => {
+    currentElementId.value = e.id;
     p.getPageByIndex(currentPageIndex.value).addElement(e);
     project.value = p.getJson();
   };
@@ -28,12 +39,23 @@ export const useProjectStore = defineStore('project', () => {
     project.value = p.getJson();
   };
 
+  const changeElementStyle = (style: Record<string, any>) => {
+    const element = p.getPageByIndex(currentPageIndex.value).getElementById(currentElement.value.id);
+    element.style = {
+      ...element.style,
+      ...style
+    };
+    project.value = p.getJson();
+  };
+
   return {
     project,
     currentPage,
     currentPageElements,
     currentElement,
     addElement,
-    changeElementProps
+    changeElementProps,
+    changeElementStyle,
+    setCurrentElement
   };
 });

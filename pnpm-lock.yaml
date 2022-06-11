@@ -51,10 +51,12 @@ importers:
     specifiers:
       '@lc/shared': workspace:^0.0.1
       pinia: ^2.0.14
+      vue-drag-resize-next: 0.0.2-alpha.3
       vue-router: ^4.0.15
     dependencies:
       '@lc/shared': link:../../packages/shared
       pinia: registry.npmmirror.com/pinia/2.0.14
+      vue-drag-resize-next: registry.npmmirror.com/vue-drag-resize-next/0.0.2-alpha.3
       vue-router: registry.npmmirror.com/vue-router/4.0.15
 
 packages:
@@ -4537,6 +4539,14 @@ packages:
     peerDependenciesMeta:
       '@vue/composition-api':
         optional: true
+    dev: false
+
+  registry.npmmirror.com/vue-drag-resize-next/0.0.2-alpha.3:
+    resolution: {integrity: sha512-iNEQH8Gf4QITUXykLBWpEpybxDJUNS1PrYL7D7tcEg/BXPsCUBuFlMydq3gOCucQy0w+qf3UAo1tSEEjJ0cv1w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-drag-resize-next/-/vue-drag-resize-next-0.0.2-alpha.3.tgz}
+    name: vue-drag-resize-next
+    version: 0.0.2-alpha.3
+    dependencies:
+      vue: registry.npmmirror.com/vue/3.2.37
     dev: false
 
   registry.npmmirror.com/vue-eslint-parser/9.0.2_eslint@8.17.0:
